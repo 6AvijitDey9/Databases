@@ -1,7 +1,7 @@
 create database avijit_dey;
 use avijit_dey;
 create table Student (Sid int primary key auto_increment, Sname varchar(20) not null, Sphone bigint(11) not null unique, 
-Semail varchar(30) not null unique, Squalification varchar(10) not null, Sdept varchar(20));
+Semail varchar(30) not null unique, Squalification varchar(10) not null, Sdept varchar(20)); #Creating table named Student
 alter table Student Add age int after Sname; #add new column
 alter table Student modify Squalification varchar(15) not null; #modify datatype size
 alter table Student DROP COLUMN Sdept; #drop column
